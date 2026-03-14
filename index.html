@@ -15,7 +15,6 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            color: #263238;
         }
 
         .container {
@@ -29,25 +28,25 @@
             margin-bottom: 40px;
         }
 
-        /* Логотиптин фону билинбеши үчүн жумшак квадрат стиль */
-        .logo-box {
+        /* ЛОГОТИПТИ ТЕГЕРЕК КЫЛУУ */
+        .logo-circle {
             width: 140px;
             height: 140px;
-            background: white; 
-            border-radius: 30px; /* Тегерек эмес, жумшак бурчтуу квадрат */
+            background: white; /* Сүрөттүн ак фону менен биригип кетет */
+            border-radius: 50%; /* ТЕГЕРЕК ФОРМА */
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
-            box-shadow: 0 15px 35px rgba(0, 172, 193, 0.15);
-            padding: 10px;
-            border: 1px solid rgba(0, 172, 193, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 172, 193, 0.15);
+            border: 2px solid rgba(0, 172, 193, 0.1);
+            overflow: hidden; /* Четтерин тегерек кылып кесет */
         }
 
         .logo-img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Сүрөттү баштапкы формасында сактайт */
+            width: 85%; /* Сүрөттүн четтери кесилбеши үчүн бир аз кичирейтилди */
+            height: 85%;
+            object-fit: contain; /* Сүрөттү оригинал калыбында сактайт */
         }
 
         h1 { 
@@ -112,7 +111,7 @@
 
     <div class="container">
         <div class="header">
-            <div class="logo-box">
+            <div class="logo-circle">
                 <img src="logo.jpg" onerror="this.src='https://via.placeholder.com/140?text=TAZA+SHOP'" alt="Таза Шоп" class="logo-img">
             </div>
             <h1>Таза Шоп магазини</h1>
