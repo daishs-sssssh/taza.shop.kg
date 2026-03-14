@@ -6,143 +6,28 @@
     <title>TAZA SHOP - Премиум Дүкөндөр Тармагы</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            /* Логотиптеги түскө шайкеш келген жумшак градиент фон */
-            background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 50%, #f1f8e9 100%);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            color: #2c3e50;
-        }
+    /* Башка стилдер ошол бойдон калат... */
 
-        .container {
-            width: 100%;
-            max-width: 420px;
-            text-align: center;
-        }
+    .logo-wrapper {
+        width: 130px;
+        height: 130px;
+        background: white; /* Сүрөттүн ак фону менен биригип кетет */
+        border-radius: 50%; /* Тегерек кылат */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        box-shadow: 0 10px 30px rgba(0, 172, 193, 0.2);
+        overflow: hidden; /* Сүрөттүн четтерин тегерек кылып кесет */
+        border: 4px solid white; /* Сүрөт менен четтин ортосунда боштук калтырат */
+    }
 
-        .header {
-            margin-top: 20px;
-            margin-bottom: 30px;
-            animation: fadeInDown 1s ease-out;
-        }
-
-        .logo-container {
-            width: 120px;
-            height: 120px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            box-shadow: 0 10px 25px rgba(0, 172, 193, 0.2);
-            padding: 10px;
-            border: 2px solid #00acc1;
-        }
-
-        .logo-img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        h1 { 
-            font-size: 26px; 
-            font-weight: 700;
-            color: #00838f; 
-            margin: 0; 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-        }
-
-        .subtitle { 
-            color: #546e7a; 
-            font-size: 11px; 
-            font-weight: 600; 
-            letter-spacing: 3px;
-            margin-top: 8px;
-            text-transform: uppercase;
-        }
-
-        /* "Богатый" көрүнүш үчүн баскычтардын стили */
-        .branch-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px); /* Айнек сымал эффект */
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 22px;
-            text-decoration: none;
-            color: #333;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-        }
-
-        .branch-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0, 172, 193, 0.15);
-            background: rgba(255, 255, 255, 0.9);
-        }
-
-        .info { text-align: left; }
-        .area-tag { 
-            font-size: 10px; 
-            color: #00acc1; 
-            text-transform: uppercase; 
-            font-weight: 700; 
-            margin-bottom: 5px; 
-            display: block; 
-        }
-        .address { 
-            font-weight: 600; 
-            font-size: 16px; 
-            color: #263238; 
-            display: block; 
-        }
-        
-        .schedule { 
-            font-size: 12px; 
-            color: #455a64;
-            margin-top: 5px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-        }
-
-        .wa-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-        }
-
-        .wa-icon img { width: 24px; filter: brightness(0) invert(1); }
-
-        .footer-text { 
-            color: #b0bec5; 
-            font-size: 11px; 
-            margin-top: 40px; 
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+    .logo-img {
+        width: 100%; /* Сүрөт толугу менен тегеректин ичин толтурат */
+        height: 100%;
+        object-fit: contain; /* Сүрөт кысылбай, таза көрүнөт */
+    }
+</style>
 </head>
 <body>
 
