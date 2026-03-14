@@ -3,40 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAZA SHOP - Премиум Дүкөндөр Тармагы</title>
+    <title>Таза Шоп - Магазиндер тармагы</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-    /* Башка стилдер ошол бойдон калат... */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            /* Логотиптин түсүнө шайкеш келген жумшак градиент */
+            background: radial-gradient(circle at top, #e0f7fa 0%, #ffffff 70%, #f1f8e9 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #263238;
+        }
 
-    .logo-wrapper {
-        width: 130px;
-        height: 130px;
-        background: white; /* Сүрөттүн ак фону менен биригип кетет */
-        border-radius: 50%; /* Тегерек кылат */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 20px;
-        box-shadow: 0 10px 30px rgba(0, 172, 193, 0.2);
-        overflow: hidden; /* Сүрөттүн четтерин тегерек кылып кесет */
-        border: 4px solid white; /* Сүрөт менен четтин ортосунда боштук калтырат */
-    }
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
 
-    .logo-img {
-        width: 100%; /* Сүрөт толугу менен тегеректин ичин толтурат */
-        height: 100%;
-        object-fit: contain; /* Сүрөт кысылбай, таза көрүнөт */
-    }
-</style>
+        .header {
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* Логотиптин фону билинбеши үчүн ак тегерек алкак */
+        .logo-wrapper {
+            width: 130px;
+            height: 130px;
+            background: white; 
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 15px 35px rgba(0, 172, 193, 0.2);
+            padding: 2px;
+            border: 5px solid white; /* Сүрөттүн ак фону менен биригип кетет */
+            overflow: hidden;
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Сүрөттү кыспай, таза көрсөтөт */
+        }
+
+        h1 { 
+            font-size: 24px; 
+            font-weight: 700;
+            color: #007c91; 
+            margin: 0; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px;
+        }
+
+        .subtitle { 
+            color: #546e7a; 
+            font-size: 11px; 
+            font-weight: 600; 
+            letter-spacing: 2px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .branch-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(15px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 1px solid white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .branch-card:active {
+            transform: scale(0.96);
+        }
+
+        .info { text-align: left; }
+        
+        .area-tag { 
+            font-size: 10px; 
+            color: #00acc1; 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            margin-bottom: 6px; 
+            display: block; 
+            letter-spacing: 1px;
+        }
+
+        .address { 
+            font-weight: 700; 
+            font-size: 16px; 
+            color: #37474f; 
+            display: block; 
+        }
+        
+        .schedule { 
+            font-size: 12px; 
+            color: #2e7d32;
+            margin-top: 6px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .wa-icon {
+            width: 45px;
+            height: 45px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .wa-icon img { width: 24px; filter: brightness(0) invert(1); }
+
+        .footer-text { 
+            color: #90a4ae; 
+            font-size: 10px; 
+            margin-top: 50px; 
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
         <div class="header">
-            <div class="logo-container">
-                <img src="logo.jpg" onerror="this.src='https://via.placeholder.com/120?text=TAZA'" alt="TAZA SHOP" class="logo-img">
+            <div class="logo-wrapper">
+                <img src="logo.jpg" onerror="this.src='https://via.placeholder.com/130?text=TAZA'" alt="Таза Шоп" class="logo-img">
             </div>
-            <h1>Таза Шоп</h1>
+            <h1>Таза Шоп магазини</h1>
             <p class="subtitle">Косметика жана жуучу каражаттар</p>
         </div>
 
@@ -74,7 +186,7 @@
         </a>
     </div>
 
-    <p class="footer-text">Premium Quality • Taza Shop 2026</p>
+    <p class="footer-text">Премиум Сапат • Таза Шоп 2026</p>
 
 </body>
 </html>
